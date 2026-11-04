@@ -1,0 +1,1 @@
+Ten folder wykorzystywany będzie do przeprowadzania testów logicznych programu.

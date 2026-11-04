@@ -1,0 +1,1 @@
+W tym folderze będą znajdować się pliki typu tekstury, dźwięki itd. wykorzystywane przez program.
