@@ -2,7 +2,7 @@
 
 int main()
 {
-    sf::RenderWindow window(sf::VideoMode({800, 600}), "SFML z windows!");
+    sf::RenderWindow window(sf::VideoMode({800, 600}), "Baller");
     
 
     sf::RectangleShape dom (sf::Vector2f(200, 100));
@@ -34,10 +34,6 @@ int main()
                 window.close();
         }
         window.clear();
-        window.draw(dom);
-        window.draw(dach);
-        window.draw(kolo);
-        window.draw(drzewo);
         window.display();
     }
 }
