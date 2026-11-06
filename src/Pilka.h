@@ -1,9 +1,10 @@
-
 #pragma once
+#include <SFML/Graphics.hpp>
 
 class Pilka {
     private:
     float x, y, vx, vy, r;
+    sf::CircleShape ksztalt;
 
     public:
     // Konstruktor pilki
@@ -15,5 +16,7 @@ class Pilka {
     void odbijX();
     void odbijY();
     void przesun(float dt);
+    void rysuj(sf::RenderWindow& okno);
+
     
 };
