@@ -12,7 +12,21 @@ int main()
     while (window.isOpen())
     {
         float dt = zegar.restart().asSeconds();
+        if(dt>0.05){
+            dt = 0.05;
+        }
         p1.przesun(dt);
+        if (p1.getX()<=0 || p1.getX() + 2*p1.getR() >=800)
+        {
+            p1.odbijX();
+        }
+
+         if (p1.getY()<=0 || p1.getY() + 2*p1.getR() >=600)
+        {
+            p1.odbijY();
+        }
+        
+        
 
         while (const std::optional event = window.pollEvent())
         {
